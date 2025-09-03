@@ -28,6 +28,19 @@ The repository is configured for [shadcn/ui](https://ui.shadcn.com). Use the CLI
 npx shadcn-ui@latest add button
 ```
 
+## Authentication
+
+The app uses [NextAuth.js](https://next-auth.js.org) with Strava OAuth. Configure your credentials in `.env`:
+
+```env
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=your_secret
+STRAVA_CLIENT_ID=your_client_id
+STRAVA_CLIENT_SECRET=your_client_secret
+```
+
+Visit `/login` to sign in with Strava and access the protected dashboard at `/dashboard`.
+
 ## Deployment
 
 The app is designed to run on [Scalingo](https://scalingo.com). Ensure the `DATABASE_URL` environment variable points to your Scalingo PostgreSQL add-on.
