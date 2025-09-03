@@ -2,6 +2,8 @@
 
 A Next.js 14 TypeScript application connected to a PostgreSQL database using Prisma ORM.
 
+The project uses Tailwind CSS and [shadcn/ui](https://ui.shadcn.com) for reusable components.
+
 ## Getting Started
 
 1. Install dependencies:
@@ -17,6 +19,14 @@ A Next.js 14 TypeScript application connected to a PostgreSQL database using Pri
    ```bash
    npm run dev
    ```
+
+### Adding UI Components
+
+The repository is configured for [shadcn/ui](https://ui.shadcn.com). Use the CLI to add components:
+
+```bash
+npx shadcn-ui@latest add button
+```
 
 ## Deployment
 
